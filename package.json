@@ -1,0 +1,60 @@
+{
+    "name": "com.litslink.lavo",
+    "version": "0.0.1",
+    "displayName": "Lavo",
+    "cordova": {
+        "platforms": [
+            "android",
+            "ios"
+        ],
+        "plugins": {
+            "cordova-plugin-cache-clear": {},
+            "cordova-plugin-camera": {
+                "CAMERA_USAGE_DESCRIPTION": " ",
+                "PHOTOLIBRARY_USAGE_DESCRIPTION": " "
+            },
+            "cordova-plugin-datepicker": {},
+            "cordova-plugin-device": {},
+            "cordova-plugin-dialogs": {},
+            "cordova-plugin-facebook4": {
+                "APP_ID": "1113408808737940",
+                "APP_NAME": "Lavo"
+            },
+            "cordova-plugin-geolocation": {},
+            "cordova-plugin-network-information": {},
+            "cordova-plugin-splashscreen": {},
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-wkwebview-engine": {},
+            "ionic-plugin-keyboard": {},
+            "cordova-plugin-inappbrowser": {},
+            "cordova-plugin-crosswalk-webview": {
+                "XWALK_VERSION": "23+",
+                "XWALK_LITEVERSION": "xwalk_core_library_canary:17+",
+                "XWALK_COMMANDLINE": "--disable-pull-to-refresh-effect",
+                "XWALK_MODE": "embedded",
+                "XWALK_MULTIPLEAPK": "true"
+            },
+            "cordova-plugin-firebase": {}
+        }
+    },
+    "dependencies": {
+        "cordova-android": "^6.2.3",
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-cache-clear": "^1.3.6",
+        "cordova-plugin-camera": "^2.4.1",
+        "cordova-plugin-compat": "^1.1.0",
+        "cordova-plugin-crosswalk-webview": "^2.3.0",
+        "cordova-plugin-datepicker": "^0.9.3",
+        "cordova-plugin-device": "^1.1.6",
+        "cordova-plugin-dialogs": "^1.3.3",
+        "cordova-plugin-facebook4": "^1.7.4",
+        "cordova-plugin-firebase": "^0.1.20",
+        "cordova-plugin-geolocation": "^2.4.3",
+        "cordova-plugin-inappbrowser": "^1.7.1",
+        "cordova-plugin-network-information": "^1.3.3",
+        "cordova-plugin-splashscreen": "^4.0.3",
+        "cordova-plugin-whitelist": "^1.3.2",
+        "cordova-plugin-wkwebview-engine": "^1.1.3",
+        "ionic-plugin-keyboard": "^2.2.1"
+    }
+}

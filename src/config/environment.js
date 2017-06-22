@@ -86,7 +86,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.BACKEND.host = 'http://api.lavo.devlits.com';
+    ENV.BACKEND.host = 'https://api.lavohost.com';
   }
 
   ENV['ember-simple-auth'] = {

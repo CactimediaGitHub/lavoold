@@ -8,6 +8,7 @@ const fbPlugin = window.facebookConnectPlugin;
 const permissions = ['email'];
 
 export default TokenAuthenticator.extend({
+  pushNotification: Ember.inject.service(),
   init() {
     this._super(...arguments);
 
@@ -41,5 +42,18 @@ export default TokenAuthenticator.extend({
     return new RSVP.Promise((resolve, reject) => {
       fbPlugin.login(permissions, resolve, reject);
     });
-  }
+  },
+
+  restore(properties) {
+    const propertiesObject = Ember.Object.create(properties);
+
+    return new Ember.RSVP.Promise((resolve, reject) => {
+      if (!Ember.isEmpty(propertiesObject.get(this.tokenPropertyName))) {
+        this.get('pushNotification').registerToken();
+        resolve(properties);
+      } else {
+        reject();
+      }
+    });
+  },
 });

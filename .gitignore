@@ -7,3 +7,4 @@ npm-debug.log
 # Editors and IDEs
 *.sublime*
 .idea/
+node_modules/
