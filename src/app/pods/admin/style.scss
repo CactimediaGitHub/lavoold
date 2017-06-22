@@ -1,0 +1,22 @@
+.credits {
+  .ui.date-picker {
+    text-transform: uppercase;
+  }
+}
+
+.open-basket-layout {
+  background-repeat: no-repeat;
+  background-position: 0 7vh;
+  background-color: $violet;
+  background-size:cover;
+
+}
+.order-layout{
+  position:relative;
+  .go-back{
+    position:absolute;
+  }
+}
+.no-location{
+  text-align:center;
+}

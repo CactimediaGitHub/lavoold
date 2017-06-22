@@ -1,0 +1,9 @@
+{{#vendor-container classNames="double scrollable"}}
+  {{#each model as |vendor|}}
+    {{vendor-item vendor=vendor onClick=(route-action "goToVendor" vendor.id)}}
+  {{else}}
+    Vendors no found.
+  {{/each}}
+
+  {{#infinity-loader infinityModel=model triggerOffset=200 scrollable=".scrollable"}}{{/infinity-loader}}
+{{/vendor-container}}

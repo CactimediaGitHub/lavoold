@@ -1,0 +1,17 @@
+<div class="ui padded layout notifications">
+  <div class="header content">
+    <div class="ui header header-default-height promotion-page">
+      <div class="item" {{action (route-action 'goBack')}}>
+        <i class="lavo-icon-arrow icon"></i>
+      </div>
+      <div class="content">Notifications</div>
+      <div class="item"></div>
+    </div>
+  </div>
+  <div class="content" id="notifications_list">
+    {{#each model as |item|}}
+      {{notification-item notification=item}}
+    {{/each}}
+    {{#infinity-loader infinityModel=model scrollable="#notifications_list" triggerOffset=200 }}{{/infinity-loader}}
+  </div>
+</div>

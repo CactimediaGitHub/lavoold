@@ -1,0 +1,10 @@
+<div class="cover"></div>
+<div class="content">
+  <div class="header">{{vendor.name}}</div>
+  <div class="location">
+    <i class="lavo-icon-map-marker icon"></i> {{vendor.address}}
+  </div>
+</div>
+{{#if vendor.cachedAverageRating}}
+  <div class="rate">{{vendor.cachedAverageRating}}</div>
+{{/if}}

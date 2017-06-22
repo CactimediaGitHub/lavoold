@@ -1,0 +1,74 @@
+.mapboxgl-map {
+  flex: 1;
+  height: 100%;
+  overflow: initial;
+}
+
+.mapboxgl-popup {
+  top: -7vh;
+}
+
+.mapboxgl-popup-content {
+  background: none;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.mapboxgl-popup-tip {
+  display: none;
+}
+
+.ui.card.login {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+
+  &.info{
+    .ui.button{
+      margin-right: .9em;
+    }
+
+    .button-close{
+      position: relative;
+      z-index: 200;
+    }
+  }
+}
+
+.ui.card.fill-profile .sub-header {
+  font-size: .8rem;
+}
+
+.ui.layout.home {
+  .ui.header {
+    .content {
+      padding: 0 0.5em;
+    }
+
+    input.search {
+      width: 100%;
+      border: none;
+      color: #05a4ff;
+      padding-top: 0;
+    }
+
+    .cancel-search{
+      padding-right:.8em;
+    }
+  }
+
+  & > .content:not(.header):not(.footer):not(.tabs):not(.bottom) {
+    display: flex;
+    flex-direction: column;
+    transform:none!important;
+    will-change:initial!important;
+  }
+
+}
+
+.blue-link {
+  color: $lightBlue!important;
+  padding-right: 0;
+  margin-left: 1rem;
+}

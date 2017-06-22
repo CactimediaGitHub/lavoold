@@ -1,0 +1,91 @@
+.ui.cards {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 1rem;
+  font-weight: 100;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  transform: translateZ(0);
+
+
+
+  .item {
+    background-position: center;
+    background-size: cover;
+    min-height: 25.1vh;
+    padding: .91em .9em;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+
+    .rate {
+      font-size: .9em;
+      padding: .07em .25em;
+      border: 1px solid white;
+      border-radius: .1rem;
+      display: inline-block;
+      position: relative;
+      z-index: 10;
+    }
+
+    .content {
+      position: relative;
+      z-index: 10;
+    }
+
+    .header {
+      margin-bottom: .25em;
+    }
+
+    .location {
+      font-size: .7em;
+      opacity: .7;
+
+      .icon {
+        margin-right: .3em;
+        font-size: 1.1em;
+      }
+    }
+
+    .cover {
+      background:rgba(0,0,0,.3);
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    @extend .clickable;
+  }
+}
+
+.ui.double.cards {
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .item {
+    flex: 2 1 50%;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+
+    &:nth-child(2n + 2),
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}
+
+.mini-card{
+  .ui.card{
+    align-items: center;
+
+    .content{
+      margin-bottom: -1em;
+    }
+  }
+}
